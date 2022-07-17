@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,10 @@
     <title>Dairy business</title>
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="bigcontainer">
         <div class="topbar">
@@ -35,7 +37,9 @@
                     <h1>Nyota Dairies Limited</h1>
                     <h1>Specialized in production and supple of milk for processing</h1>
                 </div>
-                <p>Nyota Dairies limited, located in Nakuru county,<br>is a large scale milk producer. It is one of biggest milk producers in the area<br>commited to excellence in producing best quality milk<br>and best selling</p>
+                <p>Nyota Dairies limited, located in Nakuru county,<br>is a large scale milk producer. It is one of
+                    biggest milk producers in the area<br>commited to excellence in producing best quality milk<br>and
+                    best selling</p>
                 <div class="sheds">
                     <h1>Our Sheds</h1>
                     <div class="sample">
@@ -55,39 +59,94 @@
                 <img src="assets/images/parlour.jpg" alt="dairy fiel">
             </div>
         </div>
-        <div class="footer">
-            <div class="footlogo">
-                <div>
-                    <img src="assets/images/milk.jpeg" alt="logo" width="100px">
-                </div>
-                <div>
-                    <h2>Nyota Dairies</h2>
-                    <p>Focussing on maximum<br>Productivity</p>
-                </div>
+        <h3 id="farmname">Nyota Dairies Limited</h3>
+    <div class="produce">
+        <div class="data-input">
+            <!-- <form action="submit" onsubmit="totalproduce();"> -->
+            <h4>Daily production data collection form</h4>
+            <div id="date">
+                <label>Date</label>
+                <input id="daysdate" type="datetime-local">
             </div>
-            <div class="about">
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="##">Production</a></li>
-                    <li><a href="#">Our Services</a></li>
-                </ul>
+            <div id="sheds">
+                <label for="shed-A">Shed A: Milk (Litre)</label>
+                <input id="q" type="number">
             </div>
-            <div class="income">
-                <ul>
-                    <li><a href="#">Income</a></li>
-                    <li><a href="#">Sales</a></li>
-                    <li><a href="#">Expenditure</a></li>
-                    <li><a href="#">Targets</a></li>
-                </ul>
+
+            <div id="sheds">
+                <label for="shed-B">Shed B: Milk (Litre)</label>
+                <input id="z" type="number">
             </div>
-            <div class="Others">
-                <ul>
-                    <li><a href="#">Others</a></li>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Follow us</a></li>
-                </ul>
+            <div id="sheds">
+                <label for="shed-C">Shed C: Milk (Litre)</label>
+                <input id="y" type="number">
             </div>
+            <div id="sheds">
+                <label for="shed-D">Shed D: Milk (Litre)</label>
+                <input id="p" type="number">
+            </div>
+            <div>
+                 <label for="total">Total Productions</label>
+                <input id="t" type="number">
+            </div>
+            <button id="submit-btn" onclick="submit-btn">Submit</button>
+            <button id="reset-results" type="reset" onclick="reset-results();">Reset</button>
+            </form>
+        </div>
+        <div class="output">
+            <h2 id="output-pro">Productions Summary</h2>
+            <output id="G"></output><br>
+            <output id="K"></output><br>
+            <output id="L"></output><br>
+            <output id="I"></output><br>
+            <output id="O"></output>
+        </div>
+        <div class="btn">
+            <button id="btn">income Over Time</button>
+        </div>
+        <div class="income">
+            <output id="weeklyoutput"></output>
+            <output id="weeklyoutput"></output>
+        </div>
+        <div class="yearlyre">
+            <output id="leapyear"></output>
         </div>
     </div>
+            <div class="footer">
+                <div class="footlogo">
+                    <div>
+                        <img src="assets/images/milk.jpeg" alt="logo" width="100px">
+                    </div>
+                    <div>
+                        <h2>Nyota Dairies</h2>
+                        <p>Focussing on maximum<br>Productivity</p>
+                    </div>
+                </div>
+                <div class="about">
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="##">Production</a></li>
+                        <li><a href="#">Our Services</a></li>
+                    </ul>
+                </div>
+                <div class="income">
+                    <ul>
+                        <li><a href="#">Income</a></li>
+                        <li><a href="#">Sales</a></li>
+                        <li><a href="#">Expenditure</a></li>
+                        <li><a href="#">Targets</a></li>
+                    </ul>
+                </div>
+                <div class="Others">
+                    <ul>
+                        <li><a href="#">Others</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Follow us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="assets/main.js"></script>
 </body>
+
 </html>
