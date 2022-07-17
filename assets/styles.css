@@ -113,3 +113,71 @@ body{
     align-items: center;
     justify-content: space-around;
 }
+.income{
+    padding: 0%;
+    background-color: blanchedalmond;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+.output-per-shed{
+    box-sizing: border-box;
+    background-color: white;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10%;
+    padding-top: 0%;
+}
+.dailyrecord{
+    display: flex;
+    flex-direction: row;
+    padding: 10%;
+}
+.income-over-time{
+    display: flex;
+    flex-direction: row;
+    background-color: blanchedalmond;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding-bottom: 20%;
+    align-items: center;
+    justify-content: space-around;
+}
+#reset-results{
+    color: black;
+    background-color: aqua;
+    font-size: 1rem;
+    padding: 2%;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+#submit-btn{
+    color: black;
+    background-color: aqua;
+    font-size: 1rem;
+    padding: 2%;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+#btn{
+    color: black;
+    background-color: aqua;
+    font-size: 1rem;
+    padding: 2%;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+.produce{
+    max-width: 80rem;
+    margin: 0 auto;
+    padding-bottom: 5%;
+}
+#farmname{
+    margin: 0 auto;
+    max-width: 80rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: wavy;
+}
