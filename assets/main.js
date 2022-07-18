@@ -36,3 +36,27 @@ function findTotal(){
     }
     sum("sum")
 }
+
+function sumTotal() {
+    var sheds = document.getElementById("sheds");
+    var shedNumber = sheds.options[sheds.selectedIndex].text;
+
+    if(txtDailyProd.value===""){
+        window.alert("Please enter daily production of the selected shed.");
+        return;
+    }
+
+    var dailyProduction = parseInt(txtDailyProd.value);
+    var prod = { shed: shedNumber, production: dailyProduction };
+    productions.push(prod);
+    totalProduce += dailyProduction;
+    console.log("Total Produce " + totalProduce);
+    console.log(productions);
+    window.alert("Daily production for " + shedNumber + " added.");
+    txtDailyProd.value = "";
+
+    var curDiv = document.getElementById("totals");
+
+    var newDiv = document.createElement("div");
+    var divContent = document.createTextNode("Your production in " + shedNumber + " will be Ksh " + dailyProduction);
+}
