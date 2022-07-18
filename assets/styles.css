@@ -15,10 +15,10 @@ body{
     background-color:blanchedalmond;
     max-width: 80rem;
     width: 100%;
-    margin: 0 auto;
     padding: 0 3rem;
     z-index: 10;
     border-bottom: 8px solid aqua;
+    margin: 0 auto !important;
 }
 .topbar nav{
     display: flex;
@@ -181,8 +181,9 @@ body{
     font-weight: bold;
     text-decoration: wavy;
 }
-.others{
-    background-image: url(assets/images/dairyfiel.jpeg);
+.income{
+    background-image: url("assets/images/dairyfiel.jpeg");
     background-repeat: no-repeat;
-    background-size: 20px;
+    background-position: center;
+    background-size: auto;
 }
