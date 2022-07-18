@@ -181,3 +181,8 @@ body{
     font-weight: bold;
     text-decoration: wavy;
 }
+.others{
+    background-image: url(assets/images/dairyfiel.jpeg);
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
