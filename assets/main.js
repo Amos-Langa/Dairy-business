@@ -20,3 +20,19 @@ document.getElementById("btn").onclick = function(){
     document.getElementById("yearlyoutput").value = "Your Yearly income will be Ksh "+ yearlyoutput;
 }
 }
+
+const cowSheds = ["shed A","shed B","shed C","shed D"];
+
+let getSum = document.querySelector(".outputMain");
+
+function findTotal(){
+    output0.innerHTML = q.value;
+    output1.innerHTML = z.value;
+    output2.innerHTML = y.value;
+    output3.innerHTML = p.value;
+
+    var sum =function(tota){
+        consolelog(q+z+y+p);
+    }
+    sum("sum")
+}
